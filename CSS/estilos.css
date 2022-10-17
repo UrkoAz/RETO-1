@@ -9,7 +9,7 @@ head{
 
 .boton{
     color: white;
-    background-color: green; /*color del fondo del botón*/
+    background-color: rgb(45, 153, 45); /*color del fondo del botón*/
     float: right; /*para que vaya a la derecha del todo*/
     float: top; /*para que vaya arriba del todo*/
     padding: 9px;
@@ -22,13 +22,13 @@ head{
 
 .boton:hover{  /*cuando pasas el cursor cambia de color*/
     background-color: rgb(48, 221, 184); 
-    color: rgba(70, 64, 64, 0.651);
+    color: rgba(255, 0, 0, 0.651);
 }
 hr{
-    border-top: 3px solid green; /*línea*/
+    border-top: 3px solid rgb(45, 153, 45); /*línea*/
 }
 .men {
-    background-color: green; 
+    background-color: rgb(45, 153, 45); 
     list-style-type: none;
     text-align: center;
     margin: 0;
