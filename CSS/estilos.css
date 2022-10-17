@@ -23,3 +23,6 @@ head{
     background-color: rgb(48, 221, 184); 
     color: rgba(70, 64, 64, 0.651);
 }
+hr{
+    border-top: 3px solid green;
+}
