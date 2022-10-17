@@ -3,6 +3,23 @@ head{
 }
 
 .contacto{
+    color: aliceblue;
+}
+
+.boton{
+    color: white;
+    background-color: green;
     float: right;
     float: top;
+    padding: 9px;
+    margin-right: 10px;
+    border: none;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: blue;
+    color: white;
 }
