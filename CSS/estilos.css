@@ -1,5 +1,6 @@
 head{
     float:left;
+    float: top;
 }
 
 .contacto{
@@ -24,5 +25,17 @@ head{
     color: rgba(70, 64, 64, 0.651);
 }
 hr{
-    border-top: 3px solid green;
+    border-top: 3px solid green; /*línea*/
+}
+.men {
+    background-color: green; 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.men li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
 }
