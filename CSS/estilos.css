@@ -3,8 +3,16 @@ head{
     float: top;
 }
 
+body{
+    background-image: url(file:///C:/Users/1ASIR/Desktop/RETO-1/images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .contacto{
     color: aliceblue;
+    transition-duration: 0.4s;
 }
 
 .boton{
@@ -12,7 +20,7 @@ head{
     background-color: coral; /*color del fondo del botón*/
     float: right; /*para que vaya a la derecha del todo*/
     float: top; /*para que vaya arriba del todo*/
-    padding: 9px;
+    padding: 15px;
     margin-right: 10px; /*espacio entre botones*/
     border: none;
     text-align: center;
@@ -34,6 +42,7 @@ hr{
     text-align: center;
     margin: 0;
     padding: 0;
+    transition-duration: 0.4s;
 }
 
 .men .mennuu {
@@ -45,6 +54,7 @@ hr{
 .menu{
     color: white;
     cursor: pointer;
+    transition-duration: 0.4s;
 }
 
 .mennuu:hover{
@@ -66,15 +76,18 @@ hr{
     display: grid;
     color: rgb(44, 33, 1);
     font-size: 19px;
-}
-
-body{
-    background-image: url(file:///C:/Users/1ASIR/Desktop/RETO-1/images/fondo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition-duration: 0.4s;
 }
 
 a{
     text-decoration: none;
+}
+
+.maristak{
+    text-decoration: none;
+    color: rgb(44, 33, 1);
+}
+
+.maristak:hover{
+    color: coral;
 }
