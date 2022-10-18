@@ -9,13 +9,14 @@ head{
 
 .boton{
     color: white;
-    background-color: rgb(45, 153, 45); /*color del fondo del botón*/
+    background-color: rgb(197, 24, 24); /*color del fondo del botón*/
     float: right; /*para que vaya a la derecha del todo*/
     float: top; /*para que vaya arriba del todo*/
     padding: 9px;
     margin-right: 10px; /*espacio entre botones*/
     border: none;
     text-align: center;
+    font-size: 16px;
     transition-duration: 0.4s; /*transición para cuando se entre a la web*/
     cursor: pointer; /*cuando pasas el cursor cambia al pointer*/
 }
@@ -25,17 +26,26 @@ head{
     color: rgba(255, 0, 0, 0.651);
 }
 hr{
-    border-top: 3px solid rgb(45, 153, 45); /*línea*/
+    border-top: 3px solid rgb(197, 24, 24); /*línea*/
 }
 .men {
-    background-color: rgb(45, 153, 45); 
+    background-color: rgb(197, 24, 24); 
     list-style-type: none;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
+
 .men li {
     display: inline-block;
     font-size: 20px;
     padding: 20px;
+}
+
+li {
+    color: white;
+    cursor: pointer;
+}
+
+li:hover{
+    color: aqua;
 }
