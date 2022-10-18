@@ -9,7 +9,7 @@ head{
 
 .boton{
     color: white;
-    background-color: rgb(197, 24, 24); /*color del fondo del botón*/
+    background-color: coral; /*color del fondo del botón*/
     float: right; /*para que vaya a la derecha del todo*/
     float: top; /*para que vaya arriba del todo*/
     padding: 9px;
@@ -23,29 +23,58 @@ head{
 
 .boton:hover{  /*cuando pasas el cursor cambia de color*/
     background-color: rgb(48, 221, 184); 
-    color: rgba(255, 0, 0, 0.651);
+    color: coral;
 }
 hr{
-    border-top: 3px solid rgb(197, 24, 24); /*línea*/
+    border-top: 3px solid coral; /*línea*/  /* colores para la web: coral o rgb(197, 24, 24) */
 }
 .men {
-    background-color: rgb(197, 24, 24); 
+    background-color: coral; 
     list-style-type: none;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
-.men li {
+.men .mennuu {
     display: inline-block;
     font-size: 20px;
     padding: 20px;
 }
 
-li {
+.menu{
     color: white;
     cursor: pointer;
 }
 
-li:hover{
+.mennuu:hover{
     color: aqua;
+}
+
+.nombres{
+    display: grid;
+    color: rgb(44, 33, 1);
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.nombres:hover{
+    color: coral;
+}
+
+.intro{
+    display: grid;
+    color: rgb(44, 33, 1);
+    font-size: 19px;
+}
+
+body{
+    background-image: url(file:///C:/Users/1ASIR/Desktop/RETO-1/images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
 }
