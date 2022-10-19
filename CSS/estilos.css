@@ -17,6 +17,13 @@ body{
 }
 
 .boton{
+    align-items: center;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
     color: white;
     background-color: coral; /*color del fondo del botón*/
     float: right; /*para que vaya a la derecha del todo*/
@@ -28,6 +35,11 @@ body{
     font-size: 16px;
     transition-duration: 0.4s; /*transición para cuando se entre a la web*/
     cursor: pointer; /*cuando pasas el cursor cambia al pointer*/
+}
+
+.raise:hover,
+.raise:focus {
+  transform: translateY(-4px);
 }
 
 .boton:hover{  /*cuando pasas el cursor cambia de color*/
