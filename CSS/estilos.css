@@ -41,14 +41,16 @@ hr{
     list-style-type: none;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     transition-duration: 0.4s;
 }
 
 .men .mennuu {
-    display: inline-block;
+    display: grid;
     font-size: 20px;
     padding: 20px;
+    list-style-type: none;
+    display: inline;
 }
 
 .menu{
@@ -81,6 +83,11 @@ hr{
 
 a{
     text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: aqua;
 }
 
 h1{
