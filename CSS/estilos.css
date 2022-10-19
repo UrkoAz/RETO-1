@@ -64,7 +64,7 @@ hr{
 .nombres{
     display: grid;
     color: rgb(44, 33, 1);
-    font-size: 19px;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -75,7 +75,7 @@ hr{
 .intro{
     display: grid;
     color: rgb(44, 33, 1);
-    font-size: 19px;
+    font-size: 15px;
     transition-duration: 0.4s;
 }
 
@@ -83,11 +83,16 @@ a{
     text-decoration: none;
 }
 
-.maristak{
-    text-decoration: none;
+h1{
     color: rgb(44, 33, 1);
+    font-size: 50px;
 }
 
-.maristak:hover{
-    color: coral;
+.expl{
+    float: left;
+}
+
+.LogoSED{
+    float: right;
+    margin-left: 100px;
 }
