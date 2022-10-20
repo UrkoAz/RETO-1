@@ -48,7 +48,7 @@ body{
     color: coral;
 }
 hr{
-    border-top: 3px solid coral; /*línea*/  /* colores para la web: coral o rgb(197, 24, 24) */
+    border-top: 3px solid coral;
 }
 .men {
     background-color: coral; 
