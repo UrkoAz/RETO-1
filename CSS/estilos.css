@@ -9,6 +9,7 @@ body{
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition-duration: 0.4s;
+    color: rgb(44, 33, 1);
 }
 
 .contacto{
@@ -108,10 +109,23 @@ h1{
     font-size: 50px;
 }
 
+h3{
+    font-size: 30px;
+}
+
 .expl{
     float: left;
+    font-size: 20px;
 }
 
 .LogoSED{
     float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.fecha{
+    color: coral;
+    float: right;
+    margin-bottom: 100px;
 }
