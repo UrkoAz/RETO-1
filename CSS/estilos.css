@@ -118,14 +118,22 @@ h3{
     font-size: 20px;
 }
 
-.LogoSED{
+.mundo{
     float: right;
-    margin-right: 100px;
-    margin-top: 20px;
 }
 
-.fecha{
-    color: coral;
-    float: right;
-    margin-bottom: 100px;
+.columna {
+    float: left;
+    padding: 50px;
+    margin-left: 100px;
+}
+
+.linea::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.maristak{
+    padding-bottom: 100px;
 }
