@@ -128,7 +128,7 @@ h3{
     margin-left: 100px;
 }
 
-.linea::after {
+.pie::after {
     content: "";
     clear: both;
     display: table;
@@ -159,4 +159,12 @@ tr th{
 .trabexp{
     margin-top: 10px;
     font-size: 20px;
+    text-align: center;
+}
+
+.columna2{
+    float: left;
+    padding: 20px;
+    margin-left: 80px;
+    margin-top: 30px;
 }
