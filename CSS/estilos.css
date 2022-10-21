@@ -145,6 +145,18 @@ table{
     font-size: 20px;
 }
 
+.tabla1{
+    margin-left: 460px;
+    margin-top: 50px;
+    border:solid coral;
+    font-size: 20px;
+}
+
 tr th{
     padding: 10px;
+}
+
+.trabexp{
+    margin-top: 10px;
+    font-size: 20px;
 }
