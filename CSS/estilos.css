@@ -10,6 +10,9 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition-duration: 0.4s;
     color: rgb(44, 33, 1);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .contacto{
@@ -80,7 +83,7 @@ hr{
 .nombres{
     display: grid;
     color: rgb(44, 33, 1);
-    font-size: 15px;
+    font-size: 17px;
     cursor: pointer;
 }
 
@@ -91,8 +94,13 @@ hr{
 .intro{
     display: grid;
     color: rgb(44, 33, 1);
-    font-size: 15px;
+    font-size: 17px;
     transition-duration: 0.4s;
+}
+
+iframe{
+    margin-left: 200px;
+    margin-bottom: 100px;
 }
 
 a{
@@ -106,11 +114,11 @@ a:hover{
 
 h1{
     color: rgb(44, 33, 1);
-    font-size: 50px;
+    font-size: 40px;
 }
 
-h3{
-    font-size: 30px;
+h2{
+    font-size: 20px;
 }
 
 .expl{
@@ -141,7 +149,7 @@ h3{
 table{
     margin-left: 480px;
     margin-top: 50px;
-    border:solid coral;
+    border: solid coral;
     font-size: 20px;
 }
 
