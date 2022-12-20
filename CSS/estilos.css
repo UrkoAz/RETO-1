@@ -7,7 +7,7 @@ body{
     background-image: url(../images/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     transition-duration: 0.4s;
     color: rgb(44, 33, 1);
     margin-left: 10px;
@@ -47,7 +47,7 @@ body{
 }
 
 .boton:hover{  /*cuando pasas el cursor cambia de color*/
-    background-color: rgb(48, 221, 184); 
+    background-color: black; 
     color: coral;
 }
 hr{
@@ -77,7 +77,7 @@ hr{
 }
 
 .mennuu:hover{
-    color: rgb(48, 221, 184);
+    color: black;
 }
 
 .nombres{
@@ -109,7 +109,7 @@ a{
 }
 
 a:hover{
-    color: rgb(48, 221, 184);
+    color: black;
 }
 
 h1{
@@ -175,4 +175,26 @@ tr th{
     padding: 20px;
     margin-left: 80px;
     margin-top: 30px;
+}
+
+input[type='text']:focus {
+    background: #fff9a0;
+}
+input[type='tel']:focus {
+    background: #fff9a0;
+}
+input[type='email']:focus {
+    background: #fff9a0;
+}
+input[type='password']:focus {
+    background: #fff9a0;
+}
+input[type='submit']:focus {
+    background: #b3ffa0;
+}
+input[type='reset']:focus {
+    background: #ffa0a0;
+}
+.requ{
+    color:red;
 }
