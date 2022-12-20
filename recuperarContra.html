@@ -4,6 +4,12 @@
     <title>E.A. S.A.</title>
     <link rel="icon" href="images/Logo.png" type="image/icon type">
     <head>
+        <script>
+           function Enviar(){
+            alert("Recibirá un correo electrónico con instrucciones para restablecer su contraseña. Si no llega, asegúrese de revisar su carpeta de spam");
+        } 
+        </script>
+        
         <meta charset="utf-8">
         <a href="index.html"><img src="images/Logo.png" width="200" height="70"/></a>
     </head>
@@ -20,7 +26,7 @@
             <input type="email" id="Contra" name="Contra" required/>
             <span class="requ">*</span>
             <br><br>
-            <input type="submit" value="Enviar"/>
+            <input onclick="Enviar()" type="submit" value="Enviar"/>
             <input type="reset" value="Cancelar"/>
         </form>
     </body>
