@@ -181,12 +181,7 @@ input:focus {
     background: #fff9a0;
 }
 
-input[type='email']:focus {
-    background: #ff0000;
-}
-input[type='password']:focus {
-    background: #fff9a0;
-}
+
 input[type='submit']:focus {
     background: #b3ffa0;
 }
