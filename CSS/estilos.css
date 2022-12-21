@@ -177,14 +177,12 @@ tr th{
     margin-top: 30px;
 }
 
-input[type='text']:focus {
+input:focus {
     background: #fff9a0;
 }
-input[type='tel']:focus {
-    background: #fff9a0;
-}
+
 input[type='email']:focus {
-    background: #fff9a0;
+    background: #ff0000;
 }
 input[type='password']:focus {
     background: #fff9a0;
@@ -195,6 +193,7 @@ input[type='submit']:focus {
 input[type='reset']:focus {
     background: #ffa0a0;
 }
+/*todos los input son los colores que toman cuando haces clic sobre uno*/
 .requ{
     color:red;
 }
