@@ -180,10 +180,6 @@ tr th{
 input:focus {
     background: #fff9a0;
 }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 input[type='submit']:focus {
     background: #b3ffa0;
 }
