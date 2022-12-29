@@ -43,7 +43,7 @@ body{
 
 .raise:hover,
 .raise:focus {
-  transform: translateY(-4px);
+  transform: translateY(+4px);
 }
 
 .boton:hover{  /*cuando pasas el cursor cambia de color*/
