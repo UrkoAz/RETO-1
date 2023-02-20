@@ -146,7 +146,7 @@ h2{
     padding-bottom: 100px;
 }
 
-table{
+.cuenta{
     margin-left: 480px;
     margin-top: 50px;
     border: solid coral;
@@ -178,15 +178,20 @@ tr th{
 }
 
 input:focus {
-    background: #fff9a0;
+    background: rgb(252, 202, 161);
 }
-input[type='submit']:focus {
-    background: #b3ffa0;
-}
-input[type='reset']:focus {
-    background: #ffa0a0;
-}
-/*todos los input son los colores que toman cuando haces clic sobre uno*/
+
 .requ{
     color:red;
+}
+
+.inicio{
+    width:400px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.inicioses{
+    font-size: 18px;
+    margin-top: 100px;
 }

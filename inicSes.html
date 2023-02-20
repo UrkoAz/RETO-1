@@ -10,27 +10,35 @@
     <body>
         <a href="https://www.maristak.com" target="_blank" class="contacto"><button class= "boton raise">Maristak</button></a> <!--botón "Contacto"-->
         <a href="https://sed-ongd.org/" target="_blank" class="contacto"><button class= "boton raise">SED</button></a> <!--botón "SED"-->
-        
-        <form align="center" method="post" action="index.html">
-                <label for="Usuario">Usuario:</label>
-                <input type="email" id="Usuario" name="Usuario" placeholder= "Introduzca su usuario" required/><!--input de tipo mail para introducir el usuario-->
-                <span class="requ">*</span>
-                <br><br>
-                <label for="Contra">Contraseña:</label>
-                <input type="password" id="Contraseña" name="Contraseña" required/><!--contraseña obligatoria-->
-                <span class="requ">*</span>
-            <br><br>
-            <label for="rol">Rol:</label>
-            <input type="text" id="rol" name="rol" required/><!--rol obligatorio-->
-                <span class="requ">*</span>
-            <br><br>
-            <a class="nombres" href="recuperarContra.html">Recuperar la Contraseña</a><br><!--Link de referencia a la página de recuperación de contraseña-->
-            <a class="nombres" href="Crearcuenta.html">¿No tienes cuenta? Crea una cuenta</a><!--Link de referencia a la página de creación de una cuenta-->
-            <br>
-            <br>    
-                <input type="submit" value="Enviar"/><!--botón enviar-->
-                <input type="reset" value="Cancelar"/><!--botón cancelar-->
-        </form>
+        <br>
+        <div class="inicio">
+            <table class="inicioses">
+            <form method="post" action="index.html">
+                    <tr>
+                    <td><label for="Usuario">Usuario:</label></td>
+                    <td><input type="email" id="Usuario" name="Usuario" placeholder= "Introduzca su usuario" required/><!--input de tipo mail para introducir el usuario-->
+                    <span class="requ">*</span></td>
+                    </tr>
+                    <tr>
+                    <td><label for="Contra">Contraseña:</label></td>
+                    <td><input type="password" id="Contraseña" name="Contraseña" required/><!--contraseña obligatoria-->
+                    <span class="requ">*</span></td>
+                    </tr>
+                    <tr>
+                    <td><label for="rol">Rol:</label></td>
+                    <td><input type="text" id="rol" name="rol" required/><!--rol obligatorio-->
+                    <span class="requ">*</span></td>
+                    </tr>
+            </form>
+        </table>
+        <br>
+        <a class="nombres" href="recuperarContra.html">Recuperar la Contraseña</a><br><!--Link de referencia a la página de recuperación de contraseña-->
+                <a class="nombres" href="Crearcuenta.html">¿No tienes cuenta? Crea una cuenta</a><!--Link de referencia a la página de creación de una cuenta-->
+                <br>
+                <br>
+                    <input type="submit" value="Enviar" class="envcan"/><!--botón enviar-->
+                    <input type="reset" value="Cancelar" class="envcan"/><!--botón cancelar-->
+    </div>
     </body>
     <link rel="stylesheet" href="css/estilos.css">
 </html>
