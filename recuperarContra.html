@@ -3,13 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E.A. S.A.</title>
     <link rel="icon" href="images/Logo.png" type="image/icon type">
-    <head>
-        <script>/*javascript*/
-           function Enviar(){ /*función enviar para que salga una alerta*/
-            alert("Recibirá un correo electrónico con instrucciones para restablecer su contraseña. Si no llega, asegúrese de revisar su carpeta de spam");
-        } 
-        </script>
-        
+    <head>        
         <meta charset="utf-8">
         <a href="index.html"><img src="images/Logo.png" width="200" height="70"/></a>
         <link rel="stylesheet" href="CSS/estilos.css">
@@ -25,7 +19,8 @@
             <span class="requ">*</span>
             <br><br>
             <input onclick="Enviar()" type="submit" value="Enviar"/><!--botón enviar que llama a la funcion enviar-->
-            <input type="reset" value="Cancelar"/><!--botón cancelar-->
+            <input onclick="volverAtras()" type="reset" value="Cancelar"/><!--botón cancelar-->
         </form>
     </body>
+    <script src="script.js"></script>
 </html>

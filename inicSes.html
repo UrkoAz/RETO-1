@@ -24,11 +24,6 @@
                     <td><input type="password" id="Contraseña" name="Contraseña" required/><!--contraseña obligatoria-->
                     <span class="requ">*</span></td>
                     </tr>
-                    <tr>
-                    <td><label for="rol">Rol:</label></td>
-                    <td><input type="text" id="rol" name="rol" required/><!--rol obligatorio-->
-                    <span class="requ">*</span></td>
-                    </tr>
             </form>
         </table>
         <br>
@@ -36,9 +31,10 @@
                 <a class="nombres" href="Crearcuenta.html">¿No tienes cuenta? Crea una cuenta</a><!--Link de referencia a la página de creación de una cuenta-->
                 <br>
                 <br>
-                    <input type="submit" value="Enviar" class="envcan"/><!--botón enviar-->
-                    <input type="reset" value="Cancelar" class="envcan"/><!--botón cancelar-->
+                    <input onclick="login()" type="submit" value="Enviar" class="envcan"/><!--botón enviar-->
+                    <input onclick="volverAtras()" type="reset" value="Cancelar" class="envcan"/><!--botón cancelar-->
     </div>
     </body>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="script.js"></script>
 </html>
