@@ -45,6 +45,9 @@ function Registrar(){
     else if (!(n_Rol == "familia" || n_Rol == "alumno" || n_Rol == "administrador" || n_Rol == "profesor")) {
         alert("Por favor, elige un rol válido")
     }
+
+    
+
 }
 function Enviar(){ /*función enviar para que salga una alerta en recuperarContra.html*/
     alert("Recibirá un correo electrónico con instrucciones para restablecer su contraseña. Si no llega, asegúrese de revisar su carpeta de spam");
