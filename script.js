@@ -1,5 +1,5 @@
 let usuarios = [
-    {nombre: "leire", contrasena: 123, rol: "adminweb"},
+    {nombre: "leire", contrasena: 123, rol: "administrador"},
     {nombre: "urko", contrasena: 123, rol: "alumno"},
     {nombre: "gorka", contrasena: 123, rol: "profesor"},
     {nombre: "asua", contrasena: 123, rol: "familia"}
@@ -17,8 +17,7 @@ function login(v_usuario, v_contrasena, v_rol){
         }
     }
 
-
-    if (rol == "adminweb") {
+    if (rol == "administrador") {
         window.location.href="adminweb.html";
      }
      else if (rol == "profesor") {
@@ -35,6 +34,18 @@ function login(v_usuario, v_contrasena, v_rol){
          }
 }
 
+function Registrar(){
+    let n_Usuario = prompt("Introduce un nombre de usuario:");
+    let n_Contrasena = prompt("Introduce una contraseña:");
+    let n_Rol = prompt("Selecciona tu rol (familia, alumno, administrador o profesor):");
+
+    if ((n_Usuario === "") || (n_Contrasena === "") || (n_Rol === "")) {
+        alert("Todos los datos son obligatorios")
+    }
+    else if (!(n_Rol == "familia" || n_Rol == "alumno" || n_Rol == "administrador" || n_Rol == "profesor")) {
+        alert("Por favor, elige un rol válido")
+    }
+}
 function Enviar(){ /*función enviar para que salga una alerta en recuperarContra.html*/
     alert("Recibirá un correo electrónico con instrucciones para restablecer su contraseña. Si no llega, asegúrese de revisar su carpeta de spam");
 } 
