@@ -178,7 +178,7 @@ tr th{
 }
 
 .requ{
-    color:red;
+    color: coral;
 }
 
 .inicio{
@@ -214,5 +214,10 @@ tr th{
 .envcan:hover{
     background-color: black;
     border-color: black;
-    color: coral;
+    color: rgb(252, 143, 103);
+    cursor: pointer;
+}
+
+.focus:focus{
+    background-color: rgb(252, 181, 155);
 }

@@ -46,8 +46,22 @@ function Registrar(){
         alert("Por favor, elige un rol válido")
     }
 
-    
+    while ((n_Rol === "familia") || (n_Rol === "alumno")) {
+        
+        let confirmar = confirm("¿Aceptas los términos y condiciones de uso?")
 
+        if (confirmar == true) {
+            usuarios.push({nombre:n_Usuario, contrasena: n_Contrasena, rol: n_Rol})
+            break;
+        }
+        else {
+            console.log("cancelado.")
+            break;
+        }
+    }
+
+
+    
 }
 function Enviar(){ /*función enviar para que salga una alerta en recuperarContra.html*/
     alert("Recibirá un correo electrónico con instrucciones para restablecer su contraseña. Si no llega, asegúrese de revisar su carpeta de spam");
