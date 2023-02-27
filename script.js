@@ -55,13 +55,61 @@ function Registrar(){
             break;
         }
         else {
-            console.log("cancelado.")
+            alert("Cancelado.")
             break;
+        }
+    }
+    if (n_Rol === "profesor") {
+        let contraProfe = "profe";
+
+        let introContraProfe = prompt("Introduce la contraseña de profesores:")
+
+        while (!(introContraProfe != contraProfe) || (introContraProfe === "")) {
+            alert("La contraseña no es correcta.")
+            break;
+        }
+
+        while (introContraProfe === contraProfe) {
+
+        let confirmar = confirm("¿Aceptas los términos y condiciones de uso?")
+
+        if (confirmar == true) {
+            usuarios.push({nombre:n_Usuario, contrasena: n_Contrasena, rol: n_Rol})
+            break;
+        }
+        else {
+            alert("Cancelado.")
+            break;
+            }
+        }
+    }
+
+    if (n_Rol === "administrador") {
+        let contraAdmin = "admin";
+
+        let introContraAdmin = prompt("Introduce la contraseña del administrador:")
+
+        while (!(introContraAdmin != contraAdmin) || (introContraAdmin === "")) {
+            alert("La contraseña no es correcta.")
+            break;
+        }
+
+        while (introContraAdmin === contraAdmin) {
+
+        let confirmar = confirm("¿Aceptas los términos y condiciones de uso?")
+
+        if (confirmar == true) {
+            usuarios.push({nombre:n_Usuario, contrasena: n_Contrasena, rol: n_Rol})
+            break;
+        }
+        else {
+            alert("Cancelado.")
+            break;
+            }
         }
     }
 
 
-    
 }
 function Enviar(){ /*función enviar para que salga una alerta en recuperarContra.html*/
     alert("Recibirá un correo electrónico con instrucciones para restablecer su contraseña. Si no llega, asegúrese de revisar su carpeta de spam");
