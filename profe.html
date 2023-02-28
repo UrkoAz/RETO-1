@@ -4,11 +4,11 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
         <title>Profesor</title>
-        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos2.css">
         <link rel="stylesheet" type="text/css" href="css/estilotabla.css">
             <style>
                  table.dataTable thead {
-                       background-color:#7952b3;
+                       background-color:coral;
                        color:aliceblue;
                    }  
             </style>
@@ -40,7 +40,7 @@
         <script>
             $(document).ready(function() {
                 $('#tabladatos').DataTable({
-                    "ajax":{"url": "http://localhost:3000/api/reto2", "dataSrc":""},
+                    "ajax":{"url": "http://localhost:3000/api/profe", "dataSrc":""},
                     "columns":[ //reemplazar los nombres de las columnas por nombres de campos de la SELECT
                         {"data":"ID_DEP"},
                         {"data":"NOMBRE_DEP"},
