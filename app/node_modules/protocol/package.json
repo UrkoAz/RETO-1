@@ -1,0 +1,45 @@
+{
+  "author": {
+    "email": "contact@wuhkuh.com",
+    "name": "Wouter Klijn",
+    "url": "https://wuhkuh.com"
+  },
+  "bugs": {
+    "url": "https://github.com/wuhkuh/protocol/issues"
+  },
+  "description": "Protocols for Node.JS",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "pre-commit": "^1.2.2",
+    "standard": "^10.0.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "engineStrict": true,
+  "homepage": "https://github.com/wuhkuh/protocol#readme",
+  "keywords": [
+    "universal",
+    "network",
+    "protocol",
+    "parser",
+    "generator"
+  ],
+  "license": "MIT",
+  "main": "protocol.js",
+  "name": "protocol",
+  "pre-commit": "test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuhkuh/protocol.git"
+  },
+  "scripts": {
+    "bench": "node benchmark/benchmark.js",
+    "benchmark": "npm run bench",
+    "lint": "standard",
+    "test": "standard && tape test/test.js | tap-spec"
+  },
+  "version": "0.1.4"
+}
