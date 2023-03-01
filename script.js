@@ -7,6 +7,7 @@ let usuarios = [
 
 
 function login(v_usuario, v_contrasena, v_rol){
+    try{
     var v_usuario = document.getElementById("Usuario").value;
     var v_contrasena = document.getElementById("Contraseña").value;
     var v_rol = 0;
@@ -32,9 +33,13 @@ function login(v_usuario, v_contrasena, v_rol){
      else {
          alert("Esos datos no son correctos. Regístrate o cambia los datos a unos válidos");
          }
+    } catch (error){
+        console.log(error.message); // -> console is not defined
+    }
 }
 
 function Registrar(){
+    try{
     let n_Usuario = prompt("Introduce un nombre de usuario:");
     let n_Contrasena = prompt("Introduce una contraseña:");
     let n_Rol = prompt("Selecciona tu rol (familia, alumno, administrador o profesor):");
@@ -109,12 +114,25 @@ function Registrar(){
         }
     }
 
-
+    } catch (error){
+        console.log(error.message); // -> console is not defined
+    }
 }
+
 function Enviar(){ /*función enviar para que salga una alerta en recuperarContra.html*/
+    try{
     alert("Recibirá un correo electrónico con instrucciones para restablecer su contraseña. Si no llega, asegúrese de revisar su carpeta de spam");
+    
+    } catch (error){
+        console.log(error.message); // -> console is not defined
+    }
 } 
 
 function volverAtras() {
+    try{
     history.back();
+    
+    } catch (error){
+        console.log(error.message); // -> console is not defined
+    }
 }
