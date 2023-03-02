@@ -121,8 +121,12 @@ function Registrar(){
 
 function Enviar(){ /*función enviar para que salga una alerta en recuperarContra.html*/
     try{
-    alert("Recibirá un correo electrónico con instrucciones para restablecer su contraseña. Si no llega, asegúrese de revisar su carpeta de spam");
-    
+        var email = document.getElementById("email").value;
+        if (email != "") {
+        alert("Recibirá un correo electrónico a " + email + " con instrucciones para restablecer su contraseña. Si no llega, asegúrese de revisar su carpeta de spam");
+        } else{
+            alert("Por favor, ingrese una dirección de correo electrónico válida.");
+        }
     } catch (error){
         console.log(error.message); // -> console is not defined
     }

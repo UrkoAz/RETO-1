@@ -14,12 +14,12 @@
         <a href="https://sed-ongd.org/" target="_blank" class="contacto"><button class= "boton raise">SED</button></a> <!--botón "SED"-->
     <body>
         <form align="center" method="get" action="Inicses.html">
-            <label for="Contra">Introduzca su correo:</label>
-            <input type="email" id="Contra" name="Contra" required/><!--input de tipo mail obligatorio-->
+            <label for="email">Introduzca su correo:</label>
+            <input type="email" id="email" name="email" required/><!--input de tipo mail obligatorio-->
             <span class="requ">*</span>
             <br><br>
-            <input onclick="Enviar()" type="submit" value="Enviar"/><!--botón enviar que llama a la funcion enviar-->
-            <input onclick="volverAtras()" type="reset" value="Cancelar"/><!--botón cancelar-->
+            <input onclick="Enviar()" type="submit" value="Enviar" class="envcan"/><!--botón enviar que llama a la funcion enviar-->
+            <input onclick="volverAtras()" type="reset" value="Cancelar" class="envcan"/><!--botón cancelar que vuelve atrás en el historial-->
         </form>
     </body>
     <script src="script.js"></script>
