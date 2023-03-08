@@ -1,5 +1,5 @@
 let usuarios = [
-    {nombre: "leire", contrasena: 123, rol: "administrador"},
+    {nombre: "dani", contrasena: 123, rol: "director"},
     {nombre: "urko", contrasena: 123, rol: "alumno"},
     {nombre: "gorka", contrasena: 123, rol: "profesor"},
     {nombre: "fernandez", contrasena: 123, rol: "familia"},
@@ -19,8 +19,8 @@ function login(v_usuario, v_contrasena, v_rol){
         }
     }
 
-    if (rol == "administrador") {
-        window.location.href="adminweb.html";
+    if (rol == "director") {
+        window.location.href="director.html";
      }
      else if (rol == "profesor") {
          window.location.href="profe.html";
@@ -46,12 +46,12 @@ function Registrar(){
     try{
     let n_Usuario = prompt("Introduce un nombre de usuario:");
     let n_Contrasena = prompt("Introduce una contraseña:");
-    let n_Rol = prompt("Selecciona tu rol (familia, alumno, administrador, profesor o secretario):");
+    let n_Rol = prompt("Selecciona tu rol (familia, alumno, director, profesor o secretario):");
 
     if ((n_Usuario === "") || (n_Contrasena === "") || (n_Rol === "")) {
         alert("Todos los datos son obligatorios")
     }
-    else if (!(n_Rol == "familia" || n_Rol == "alumno" || n_Rol == "administrador" || n_Rol == "profesor" || n_Rol == "secretario")) {
+    else if (!(n_Rol == "familia" || n_Rol == "alumno" || n_Rol == "director" || n_Rol == "profesor" || n_Rol == "secretario")) {
         alert("Por favor, elige un rol válido")
     }
 
@@ -118,17 +118,17 @@ function Registrar(){
         }
     }
 
-    if (n_Rol === "administrador") {
-        let contraAdmin = "admin";
+    if (n_Rol === "director") {
+        let contraDir = "dir";
 
-        let introContraAdmin = prompt("Introduce la contraseña del administrador:")
+        let introContraDir = prompt("Introduce la contraseña del director:")
 
-        while (!(introContraAdmin != contraAdmin) || (introContraAdmin === "")) {
+        while (!(introContraDir != contraDir) || (introContraDir === "")) {
             alert("La contraseña no es correcta.")
             break;
         }
 
-        while (introContraAdmin === contraAdmin) {
+        while (introContraDir === contraDir) {
 
         let confirmar = confirm("¿Aceptas los términos y condiciones de uso?")
 

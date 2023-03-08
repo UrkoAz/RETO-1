@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	<title>Admin</title>
+	<title>Director</title>
     <link rel="icon" href="images/Logo.png" type="image/icon type">
 	<link rel="stylesheet" type="text/css" href="css/estilos2.css">
 	<link rel="stylesheet" type="text/css" href="css/estilotabla.css">
@@ -25,8 +25,9 @@
           		<!-- CABECERA TABLA DE DATOS -->
             		<th>ID</th>
             		<th>NOMBRE</th>
-            		<th>DIRECCIÓN</th>
-            		<th>TELÉFONO</th>
+            		<th>TRABAJO</th>
+            		<th>CONTACTO</th>
+                    <th>ID DE DEPARTAMENTO</th>
         	</tr>
 	       	</thead>
                	<tbody>
@@ -41,12 +42,13 @@
     <script>
         $(document).ready(function() {
             $('#tabladatos').DataTable({
-                "ajax":{"url": "http://localhost:3000/api/adminweb", "dataSrc":""},
+                "ajax":{"url": "http://localhost:3000/api/director", "dataSrc":""},
                 "columns":[ //reemplazar los nombres de las columnas por nombres de campos de la SELECT
-                    {"data":"ID_EMPRESA"},
-                    {"data":"NOMBRE_EMPRE"},
-                    {"data":"DIR_EMPR"},
-                    {"data":"TLF_EMPR"}
+                    {"data":"id"},
+                    {"data":"name"},
+                    {"data":"job_title"},
+                    {"data":"work_email"},
+                    {"data":"department_id"}
                 ]
             });
         });

@@ -21,8 +21,8 @@ con.connect(function(err) {
 });
 
 //seleccionar los datos a mostrar
-app.get('/api/adminweb/', (req, res)=>{
-con.query('SELECT ID_EMPRESA, NOMBRE_EMPRE, DIR_EMPR, TLF_EMPR FROM EMPRESA', (err, filas)=>{
+app.get('/api/director/', (req, res)=>{
+con.query('SELECT id, name, job_title, work_email, department_id FROM HR_EMPLOYEE WHERE ACTIVE IS TRUE', (err, filas)=>{
     if (err) throw err;
     res.send(filas);
   });
