@@ -38,7 +38,7 @@ app.get('/api/profe/', (req, res)=>{
 
 //seleccionar los datos de la consulta 3 a mostrar
 app.get('/api/secretario/', (req, res)=>{
-  con.query('SELECT DISTINCT id, display_name, email, vat, street, zip FROM res_partner WHERE EMPLOYEE IS FALSE;', (err, filas2)=>{
+  con.query('SELECT DISTINCT id, display_name, email, street, zip FROM res_partner WHERE EMPLOYEE IS FALSE;', (err, filas2)=>{
       if (err) throw err;
       res.send(filas2);
     });
