@@ -11,7 +11,7 @@ var con = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "root",
-  database: "empresa"
+  database: "Odoo"
 });
 
 //establecer conexión
@@ -31,6 +31,14 @@ con.query('SELECT ID_EMPRESA, NOMBRE_EMPRE, DIR_EMPR, TLF_EMPR FROM EMPRESA', (e
 //seleccionar los datos de la consulta 2 a mostrar
 app.get('/api/profe/', (req, res)=>{
   con.query('SELECT ID_DEP, NOMBRE_DEP, NUM_DEP, NUM_TRAB, ID_EMPRESA FROM DEPARTAMENTO', (err, filas2)=>{
+      if (err) throw err;
+      res.send(filas2);
+    });
+  });
+
+//seleccionar los datos de la consulta 3 a mostrar
+app.get('/api/secretario/', (req, res)=>{
+  con.query('SELECT DISTINCT id, display_name, email, vat, street, zip FROM res_partner WHERE EMPLOYEE IS FALSE;', (err, filas2)=>{
       if (err) throw err;
       res.send(filas2);
     });
