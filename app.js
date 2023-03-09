@@ -30,7 +30,7 @@ con.query('SELECT id, name, job_title, work_email, department_id FROM HR_EMPLOYE
 
 //seleccionar los datos de la consulta 2 a mostrar
 app.get('/api/profe/', (req, res)=>{
-  con.query('SELECT ID_DEP, NOMBRE_DEP, NUM_DEP, NUM_TRAB, ID_EMPRESA FROM DEPARTAMENTO', (err, filas2)=>{
+  con.query('', (err, filas2)=>{
       if (err) throw err;
       res.send(filas2);
     });
