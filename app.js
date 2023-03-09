@@ -8,9 +8,9 @@ app.use(cors());
 
 //establecer parámetros de conexión
 var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "root",
+  host: "192.168.1.143",
+  user: "equipoa",
+  password: "equipoa",
   database: "Odoo"
 });
 
