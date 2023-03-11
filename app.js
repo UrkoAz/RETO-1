@@ -9,8 +9,8 @@ app.use(cors());
 //establecer parámetros de conexión
 var con = mysql.createConnection({
   host: "192.168.1.143",
-  user: "equipoa",
-  password: "equipoa",
+  user: "equipoaa",
+  password: "equipoaa",
   database: "Odoo"
 });
 
@@ -41,6 +41,14 @@ app.get('/api/secretario/', (req, res)=>{
   con.query('SELECT DISTINCT id, display_name, email, street, zip FROM res_partner WHERE EMPLOYEE IS FALSE;', (err, filas3)=>{
       if (err) throw err;
       res.send(filas3);
+    });
+  });
+
+//seleccionar los datos de la consulta 4 a mostrar
+app.get('/api/alumno/', (req, res)=>{
+  con.query('SELECT DISTINCT ;', (err, filas4)=>{
+      if (err) throw err;
+      res.send(filas4);
     });
   });
 
