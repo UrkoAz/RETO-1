@@ -1,8 +1,8 @@
 let usuarios = [
     {nombre: "dani", contrasena: 123, rol: "director"},
-    {nombre: "urko", contrasena: 123, rol: "alumno"},
+    {nombre: "zigor", contrasena: 123, rol: "alumno"},
     {nombre: "gorka", contrasena: 123, rol: "profesor"},
-    {nombre: "fernandez", contrasena: 123, rol: "familia"},
+    {nombre: "egiluz", contrasena: 123, rol: "familia"},
     {nombre: "julio", contrasena: 123, rol: "secretario"}
 ];
 

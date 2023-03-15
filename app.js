@@ -30,7 +30,7 @@ con.query('SELECT id, name, job_title, work_email, department_id FROM HR_EMPLOYE
 
 //seleccionar los datos de la consulta 2 a mostrar
 app.get('/api/profe/', (req, res)=>{
-  con.query('', (err, filas2)=>{
+  con.query('SELECT DISTINCT id, name, email, calendar_last_notif_ack FROM res_partner where type = "student";', (err, filas2)=>{
       if (err) throw err;
       res.send(filas2);
     });
@@ -46,7 +46,15 @@ app.get('/api/secretario/', (req, res)=>{
 
 //seleccionar los datos de la consulta 4 a mostrar
 app.get('/api/alumno/', (req, res)=>{
-  con.query('SELECT DISTINCT ;', (err, filas4)=>{
+  con.query('SELECT DISTINCT name, work_email from hr_employee where job_title = "Profesor";', (err, filas4)=>{
+      if (err) throw err;
+      res.send(filas4);
+    });
+  });
+
+//seleccionar los datos de la consulta 5 a mostrar
+app.get('/api/alumno/', (req, res)=>{
+  con.query('SELECT DISTINCT name, work_email from hr_employee where job_title = "Profesor";', (err, filas4)=>{
       if (err) throw err;
       res.send(filas4);
     });
@@ -57,6 +65,7 @@ app.listen(puerto, function(){
   console.log("Servidor ok en puerto: "+puerto);
 });
 
+// API js
 /*var express = require('express');
 
 const { Client } = require('pg');
