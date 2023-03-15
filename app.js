@@ -53,10 +53,10 @@ app.get('/api/alumno/', (req, res)=>{
   });
 
 //seleccionar los datos de la consulta 5 a mostrar
-app.get('/api/alumno/', (req, res)=>{
-  con.query('SELECT DISTINCT name, work_email from hr_employee where job_title = "Profesor";', (err, filas4)=>{
+app.get('/api/familia/', (req, res)=>{
+  con.query('SELECT DISTINCT name, work_email from hr_employee where job_title = "Profesor";', (err, filas5)=>{
       if (err) throw err;
-      res.send(filas4);
+      res.send(filas5);
     });
   });
 
