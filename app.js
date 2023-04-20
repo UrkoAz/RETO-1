@@ -65,7 +65,7 @@ app.listen(puerto, function(){
   console.log("Servidor ok en puerto: "+puerto);
 });
 
-// API js
+// API postgre
 /*var express = require('express');
 
 const { Client } = require('pg');
