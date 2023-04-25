@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="alumno.xsl"?>
+<hr_employee>
+  <hr_employee>
+    <name>Xabier Ametzazurra</name>
+    <mail>xametzazurra@maristak.com</mail>
+  </hr_employee>
+  <hr_employee>
+    <name>Iratxe Lejarreta</name>
+    <mail>ilejarreta@maristak.com</mail>
+  </hr_employee>
+  <hr_employee>
+    <name>Hostaizka Sainz</name>
+    <mail>hostaizka@maristak.com</mail>
+  </hr_employee>
+  <hr_employee>
+    <name>Gorka Ortiz</name>
+    <mail>gortiz@maristak.com</mail>
+  </hr_employee>
+  <hr_employee>
+    <name>Eduardo Martínez</name>
+    <mail>emartinez@maristak.com</mail>
+  </hr_employee>
+</hr_employee>

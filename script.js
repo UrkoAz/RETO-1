@@ -20,19 +20,19 @@ function login(v_usuario, v_contrasena, v_rol){
     }
 
     if (rol == "director") {
-        window.location.href="director.html";
+        window.location.href="xml/director.xml";
      }
      else if (rol == "profesor") {
-         window.location.href="profe.html";
+         window.location.href="xml/profe.xml";
      }
      else if (rol == "alumno") {
-         window.location.href="alumno.html";
+         window.location.href="xml/alumno.xml";
      }
      else if (rol == "familia"){
-        window.location.href="familia.html";
+        window.location.href="xml/familia.xml";
      }
      else if (rol == "secretario"){
-        window.location.href="secretario.html";
+        window.location.href="xml/secretario.xml";
      }
      else {
          alert("Esos datos no son correctos. Regístrate o cambia los datos a unos válidos");

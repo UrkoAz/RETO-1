@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="profe.xsl"?>
+<res_partner>
+  <res_partner>
+    <id>31</id>
+    <name>Unai Egiluz</name>
+    <mail>Unai.Egiluz@maristak.net</mail>
+    <conexion>2023-03-14T08:48:16</conexion>
+  </res_partner>
+  <res_partner>
+    <id>32</id>
+    <name>Kerman Lejarraga</name>
+    <mail>Kerman.Lejarraga@maristak.net</mail>
+    <conexion>2023-03-14T08:48:59</conexion>
+  </res_partner>
+  <res_partner>
+    <id>33</id>
+    <name>Jorge Masvidal</name>
+    <mail>JorgeMasvidal@maristak.net</mail>
+    <conexion>2023-03-14T08:49:37</conexion>
+  </res_partner>
+  <res_partner>
+    <id>30</id>
+    <name>Zigor Intxausti</name>
+    <mail>zigor.intxausti@maristak.net</mail>
+    <conexion>2023-03-14T08:42:07</conexion>
+  </res_partner>
+</res_partner>
