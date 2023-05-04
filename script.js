@@ -3,7 +3,8 @@ let usuarios = [
     {nombre: "zigor", contrasena: 123, rol: "alumno"},
     {nombre: "gorka", contrasena: 123, rol: "profesor"},
     {nombre: "egiluz", contrasena: 123, rol: "familia"},
-    {nombre: "julio", contrasena: 123, rol: "secretario"}
+    {nombre: "julio", contrasena: 123, rol: "secretario"},
+    {nombre: "jon", contrasena: 123, rol: "tecnico"}
 ];
 
 
@@ -34,6 +35,9 @@ function login(v_usuario, v_contrasena, v_rol){
      else if (rol == "secretario"){
         window.location.href="xml/secretario.xml";
      }
+     else if (rol == "tecnico"){
+        window.location.href="xml/tecnico.xml";
+     }
      else {
          alert("Esos datos no son correctos. Regístrate o cambia los datos a unos válidos");
          }
@@ -46,12 +50,12 @@ function Registrar(){
     try{
     let n_Usuario = prompt("Introduce un nombre de usuario:");
     let n_Contrasena = prompt("Introduce una contraseña:");
-    let n_Rol = prompt("Selecciona tu rol (familia, alumno, director, profesor o secretario):");
+    let n_Rol = prompt("Selecciona tu rol (familia, alumno, director, profesor, secretario o tecnico):");
 
     if ((n_Usuario === "") || (n_Contrasena === "") || (n_Rol === "")) {
         alert("Todos los datos son obligatorios")
     }
-    else if (!(n_Rol == "familia" || n_Rol == "alumno" || n_Rol == "director" || n_Rol == "profesor" || n_Rol == "secretario")) {
+    else if (!(n_Rol == "familia" || n_Rol == "alumno" || n_Rol == "director" || n_Rol == "profesor" || n_Rol == "secretario"|| n_Rol == "tecnico")) {
         alert("Por favor, elige un rol válido")
     }
 

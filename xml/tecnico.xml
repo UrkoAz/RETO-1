@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="tecnico.xsl"?>
+<helpdesk_ticket>
+  <helpdesk_ticket>
+    <nIncidencia>HT00006</nIncidencia>
+    <name>Ventilador no refrigera</name>
+    <mailAyuda>emartinez@maristak.com</mailAyuda>
+    <prioridad>3</prioridad>
+    <description>Ventilador no funciona y se sobrecalienta el PC.</description>
+  </helpdesk_ticket>
+  <helpdesk_ticket>
+    <nIncidencia>HT00007</nIncidencia>
+    <name>Disco duro lleno</name>
+    <mailAyuda>xametzazurra@maristak.com</mailAyuda>
+    <prioridad>1</prioridad>
+    <description>Tengo el disco duro lleno y no se porqué.</description>
+  </helpdesk_ticket>
+  <helpdesk_ticket>
+    <nIncidencia>HT00008</nIncidencia>
+    <name>Pagos nuevas mesas</name>
+    <mailAyuda>Manolo@maderas.es</mailAyuda>
+    <prioridad>2</prioridad>
+    <description>Tengo un error con los pagos de las mesas nuevas que encargó Maristak</description>
+  </helpdesk_ticket>
+  <helpdesk_ticket>
+    <nIncidencia>HT00009</nIncidencia>
+    <name>Problema con Office</name>
+    <mailAyuda>zigor.intxausti@maristak.net</mailAyuda>
+    <prioridad>3</prioridad>
+    <description>No tengo la clave de Office en mi ordenador.</description>
+  </helpdesk_ticket>
+  <helpdesk_ticket>
+    <nIncidencia>HT00011</nIncidencia>
+    <name>No puedo acceder al wifi</name>
+    <mailAyuda>unai.egiluz@gmail.com</mailAyuda>
+    <prioridad>3</prioridad>
+    <description>No puedo acceder al wifi de invitados</description>
+  </helpdesk_ticket>
+</helpdesk_ticket>

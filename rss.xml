@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>Equipo A</title>
+    <link>equipoaa.com</link>
+    <description>Trabajos</description>
+    <item>
+        <title>Nuestros trabajos</title>
+        <link>equipoaa.com/trabajos.html</link>
+        <description>Esto es en lo que nos especializamos</description>
+    </item>
+</channel>
+</rss>
